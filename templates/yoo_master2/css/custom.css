@@ -1,0 +1,231 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/* ========================================================================
+   Use this file to add custom CSS easily
+ ========================================================================== */
+ 
+ 
+a.tm-logo {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+nav.tm-navbar.uk-navbar {
+    margin-top: 0px;
+	background: #363636;
+	margin-bottom: 0px;
+}
+.tm-headerbar.uk-clearfix.uk-hidden-small {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.uk-navbar-nav  a {
+	    font-size: 18px !important;
+}
+.uk-navbar-nav > li.uk-active > a {
+    background-color: transparent;
+    color: #FFF;
+	    
+}
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li.uk-open > a {
+  background-color: transparent;
+  color: #DDD;
+  /* 3 */
+  outline: none;
+  
+}
+.uk-navbar-nav > li > a {
+    color: #B5B3B3;
+	text-transform: uppercase;
+}
+
+.uk-navbar-center2 {
+    width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.li-ui-bg {
+
+    text-transform: uppercase;
+    background-image: url(/images/ul-nav.png);
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+}
+
+.uk-panel-box {
+    background: transparent;
+}
+
+p.new-poddon-button {
+    background-color: #3891ca;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	    font-size: 20px;
+}
+p.bu-poddon-button {
+    background-color: #3891ca;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	    font-size: 20px;
+}
+.new-poddon-div {
+    max-width: 410px;
+}
+.all-content {
+    /*background-image: linear-gradient(#d4d4d4, #f0f0f0);*/
+	background-image: linear-gradient(#d4d4d4, #fff);
+}
+.tm-footer .uk-panel {
+    width: 50%;
+    float: left;
+}
+.uk-panel.footer-contact {
+    margin-top: 0px !important;
+}
+.tm-totop-scroller { 
+        position: relative;
+		float:right;
+}
+footer#tm-footer {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    background-color: #252525;
+    color: #e1e1e1;
+    padding-top: 30px;
+}
+p.footer-zagolovok {
+    text-transform: uppercase;
+    /* font-weight: 700; */
+}
+p.footer-text {
+    color: #a7a7a7;
+}
+
+ul.home-ul {
+    list-style-type: decimal;
+}
+
+ul.home-ul> li {
+    color: #3891ca;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+ul.home-ul > li > span {
+    color: black;
+}
+.left-menu a {
+    font-size: 16px;
+}
+.bold-left-menu {
+    font-weight: 600;
+}
+.left-menu {
+    margin-top: 0px !important;
+}
+div#cck2r_button_search {
+    width: 90px !important;
+}
+div#cck2r_pd_category {
+    width: 400px !important;
+}
+.left-menu li {
+    /*list-style-image: url(/images/menu-li.png);*/
+	background: url("/images/menu-li.png") no-repeat left center;
+	padding-left: 10px;
+} 
+
+p.left-phone {
+    color: #f26522;
+    font-size: 24px;
+    font-weight: bold;
+}
+.uk-nav-side > li.uk-active > a {
+    background: transparent ;
+   color: #3190cb;
+}
+p.top-phone {
+    color: #f26522;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    background: url("/images/phone.png") no-repeat left center;
+    padding-left: 30px;
+    height: 30px;
+    padding-top: 10px;
+}
+.shapka-phone {
+    padding-top: 20px;
+	    text-align: center;
+}
+p.top-mail {
+    margin-top: 5px;
+	padding-left: 30px;
+}
+.uk-nav-side > li > a:hover, .uk-nav-side > li > a:focus {
+    background: transparent;
+    color: #6E9EBB;
+    outline: none;
+}
+
+
+/* Sub-object: `uk-navbar-toggle`
+ ========================================================================== */
+.uk-navbar-toggle {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 50px;
+}
+/*
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+.uk-navbar-toggle:hover,
+.uk-navbar-toggle:focus {
+  color: #fff;
+  text-decoration: none;
+  /* 2 */
+  outline: none;
+}
+/*
+ * 1. Center icon vertically
+ */
+.uk-navbar-toggle:after {
+  content: "\f0c9";
+font-family: FontAwesome;
+
+  /* 1 */
+  vertical-align: middle;
+}
+.uk-navbar-toggle-alt:after {
+  content: "\f002";
+}
+h1, .uk-h1 {
+    font-size: 36px;
+    line-height: 50px;
+}
+.leftbackground {
+	padding: 0px;
+    margin-top: -14px;
+    width: 260px;
+    height: 80px;
+}
+.left-menu{
+margin-top: 0px !important;
+}
+.infoblock {
+    margin-top: 0px !important;
+}
+.home-poddony-shapka {
+    text-align: center;
+}

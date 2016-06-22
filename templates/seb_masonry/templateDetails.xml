@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" version="2.5" method="upgrade">
+	<name>seb_masonry</name>
+	<author>Octopoos</author>
+	<authorEmail>contact@seblod.com</authorEmail>
+	<authorUrl>http://www.seblod.com</authorUrl>
+	<copyright>Copyright (C) 2013 SEBLOD. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<creationDate>January 2014</creationDate>
+	<description>SEBLOD 3.x - www.seblod.com // by Octopoos - www.octopoos.com</description>
+	<version>1.1.0</version>
+	
+	<files>
+		<folder>css</folder>
+		<folder>fields</folder>
+		<folder>images</folder>
+		<folder>includes</folder>
+		<folder>js</folder>
+		<folder>languages</folder>
+		<folder>positions</folder>
+		<folder>variations</folder>
+		
+		<filename>config.php</filename>
+		<filename>index.php</filename>
+		<filename>template_picker.png</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.tpl_seb_masonry.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.tpl_seb_masonry.ini</language>
+	</languages>
+	
+	<positions>
+		<position>element</position>
+	</positions>
+	
+	<config addfieldpath="/libraries/cck/construction/field">
+		<fields name="params">
+			<fieldset name="style" label="TPL_SEB_MASONRY_LEGEND_STYLE">
+				<field name="cck_client_item" type="hidden" default="0" />
+				<field name="masonry_display" type="cck" construction="core_list_display" default="0" label="TPL_SEB_MASONRY_DISPLAY" description="" class="inputbox" cck_attributes="data-cck_client_item='0=0,1=1,2=0'" />
+				<field name="" type="spacer" label="" />
+				<field name="masonry_width" type="cck" construction="more_masonry_width" default="" label="TPL_SEB_MASONRY_WIDTH" description="" class="inputbox" />
+				<field name="masonry_height" type="cck" construction="more_masonry_height" default="" label="TPL_SEB_MASONRY_HEIGHT" description="" class="inputbox" />
+				<field name="loading_event" type="list" default="ready" label="TPL_SEB_MASONRY_LOADING_EVENT" description="TPL_SEB_MASONRY_LOADING_EVENT_DESC" class="inputbox">
+					<option value="ready">Document Ready</option>
+					<option value="load">Windows Load</option>
+				</field>
+				<field name="masonry_margin" type="cck" construction="more_masonry_margin" default="" label="TPL_SEB_MASONRY_MARGIN" description="" class="inputbox" />
+				<field name="masonry_margin_custom" type="cck" construction="more_masonry_margin_custom" default="" label="" description="" class="inputbox" js_format="raw" hidden="true" js_appendto="params_masonry_margin=#params_masonry_margin_custom"
+					   js_isvisiblewhen="#params_masonry_margin_custom='params_masonry_margin','-1',false" />
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Masonry Template Updates">http://update.seblod.com/seb_masonry.xml</server>
+	</updateservers>
+</extension>

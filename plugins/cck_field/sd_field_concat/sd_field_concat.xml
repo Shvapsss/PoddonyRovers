@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="cck_field" version="2.5" method="upgrade">
+
+	<name>SD Field Concat</name>
+	<author>Simon Dowdles</author>
+	<creationDate>June 2013</creationDate>
+	<authorEmail>simon@simondowdles.com</authorEmail>
+	<authorUrl>http://www.simondowdles.com</authorUrl>
+	<copyright>Copyright (C) 2013 Simon Dowdles New Media Holdings (Pty) Ltd. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>2.5.3</version>
+	<description>Easily concatenate many fields and use them as a value. Ideal for constructing unique titles. Enjoy ;)</description>
+	
+	<scriptfile>install/script.php</scriptfile>
+	
+	<files>
+		<folder>install</folder>
+		<folder>install/fields</folder>
+		<folder>languages</folder>
+		<folder>tmpl</folder>
+		
+		<filename plugin="sd_field_concat">sd_field_concat.php</filename>
+		<filename>index.html</filename>
+		<filename>increments.ini</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.plg_cck_field_sd_field_concat.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params" addfieldpath="/libraries/cck/construction/field">
+
+			<fieldset name="basic">
+				<field name=""
+					type="spacer"
+					hr="false"
+				/>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="group"
+					type="text"
+					default="PLG_CCK_FIELD_GROUP_SD_FIELD_CONCAT"
+					label="LIB_CCK_GROUP_LABEL"
+					size="60"
+					description="LIB_CCK_FIELD_GROUP_DESC" />
+				<field
+					name="export"
+					type="cckexport"
+					default=""
+					label="LIB_CCK_EXPORT_LABEL"
+					description="LIB_CCK_FIELD_EXPORT_DESC" />
+			</fieldset>
+
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="SD Field Concat Plug-in Updates">http://update.seblod.com/plg_cck_field_sd_field_concat.xml</server>
+	</updateservers>
+
+	
+</extension>
